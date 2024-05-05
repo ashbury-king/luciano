@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Get 10 Random</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='./Get10Random.js'></script>
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="redball"></div>
+    <hr />
+    <div id="output"></div>
+    <script>
+        var redballDiv = document.getElementById("redball");
+        var paragraph = document.createElement("p");
+        paragraph.textContent = "Red Ball: " + redball;
+        redballDiv.appendChild(paragraph);
+
+        // Get the div element by its id
+        var outputDiv = document.getElementById("output");
+
+        // Loop through the array and display each element in the div
+        for (var i = 0; i < straightPicks.length; i++) {
+            // Create a new paragraph element
+            var paragraph = document.createElement("p");
+
+            // Set the text content of the paragraph to the current element of the array
+            paragraph.textContent = straightPicks[i];
+
+            // Append the paragraph to the div
+            outputDiv.appendChild(paragraph);
+        }
+    </script>
+</body>
+
+</html>
